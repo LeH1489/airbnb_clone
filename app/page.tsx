@@ -5,6 +5,7 @@ import Container from "./components/Container";
 import EmptyState from "./components/EmptyState";
 import ListingCard from "./components/listings/ListingCard";
 
+//props
 interface HomeProps {
   searchParams: IListingsParams;
 }
@@ -46,4 +47,3 @@ const Home = async ({ searchParams }: HomeProps) => {
 };
 
 export default Home;
-export const dynamic = "force-dynamic";
