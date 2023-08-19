@@ -126,3 +126,4 @@ const Categories = () => {
 };
 
 export default Categories;
+export const dynamic = "force-dynamic";

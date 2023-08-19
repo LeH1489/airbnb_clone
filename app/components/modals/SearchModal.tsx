@@ -200,3 +200,4 @@ const SearchModal = () => {
 };
 
 export default SearchModal;
+export const dynamic = "force-dynamic";
