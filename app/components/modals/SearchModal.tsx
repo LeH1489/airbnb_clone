@@ -5,7 +5,7 @@ import Modal from "./Modal";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useMemo, useState } from "react";
 import { Range } from "react-date-range";
-import dynamic from "next/dynamic";
+import dynamicMap from "next/dynamic";
 import CountrySelect, { CountrySelectValue } from "../inputs/CountrySelect";
 import qs from "query-string";
 import { formatISO, setDate } from "date-fns";
@@ -39,7 +39,7 @@ const SearchModal = () => {
 
   const Map = useMemo(
     () =>
-      dynamic(() => import("../Map"), {
+      dynamicMap(() => import("../Map"), {
         ssr: false,
       }),
     [location]
