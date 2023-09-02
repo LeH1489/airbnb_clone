@@ -84,7 +84,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
       .then(() => {
         toast.success("Listing reserved");
         setDateRange(initialDateRange);
-        //redirect to trips
+        //if success => redirect to trips
         router.push("/trips");
         router.refresh();
       })

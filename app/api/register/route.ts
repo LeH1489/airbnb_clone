@@ -3,6 +3,7 @@ import prisma from "@/app/libs/prismadb";
 import { NextResponse } from "next/server";
 
 //api handler registration
+//(fetch data via route handler)
 export async function POST(request: Request) {
   //get data from request
   const body = await request.json();

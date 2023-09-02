@@ -4,7 +4,7 @@ import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
 import { BiDollar } from "react-icons/bi";
 
 interface InputProps {
-  id: string; //among input field own id
+  id: string; //among input field own its id
   label: string; //name of input field
   type?: string; //type of input field
   disabled?: boolean;
@@ -63,7 +63,7 @@ const Input: React.FC<InputProps> = ({
           duration-150 
           transform 
           -translate-y-3 
-          top-5 
+          top-5  
           z-10 
           origin-[0] 
           ${formatPrice ? "left-9" : "left-4"}

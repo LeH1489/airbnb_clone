@@ -8,6 +8,7 @@ interface IParams {
 }
 
 //api handler delete properties
+//(fetch data via route handler)
 export async function DELETE(
   request: Request,
   { params }: { params: IParams }

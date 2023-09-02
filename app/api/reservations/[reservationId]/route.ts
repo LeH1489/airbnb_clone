@@ -7,6 +7,7 @@ interface IParams {
 }
 
 //api handler cancel reservation
+//(fetch data via route handler)
 export async function DELETE(
   request: Request,
   { params }: { params: IParams }

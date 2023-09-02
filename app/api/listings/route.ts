@@ -4,6 +4,7 @@ import primsa from "@/app/libs/prismadb";
 import getCurrentUser from "../../actions/getCurrentUser";
 
 //api handler create a listing
+//(fetch data via route handler)
 export async function POST(request: Request) {
   //get current User from session
   const currenUser = await getCurrentUser();

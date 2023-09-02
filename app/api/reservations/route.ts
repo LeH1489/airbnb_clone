@@ -2,7 +2,8 @@ import { NextResponse } from "next/server";
 import prisma from "@/app/libs/prismadb";
 import getCurrentUser from "@/app/actions/getCurrentUser";
 
-//api handler reservations
+//api handler (fetch data via route handler) reservations
+//(fetch data via route handler)
 export async function POST(request: Request) {
   const currentUser = await getCurrentUser();
 

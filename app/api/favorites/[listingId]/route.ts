@@ -8,6 +8,7 @@ interface IParams {
 }
 
 //api handler add favorite
+// (fetch data via route handler)
 export async function POST(request: Request, { params }: { params: IParams }) {
   const currentUser = await getCurrentUser();
 
